@@ -28,8 +28,8 @@ let me = {
     superHeroName: "multitask master",
     homeTown: "Lewisville",
     superPowers: ["problem solving", "crime fighting", "remaining calm"],
-    superPowerXP: function() {Math.floor(Math.random() * 100) + 1},
-    profileImage: `https://randomuser.me/api/portraits/med/lego/${Math.floor(Math.random() * 10) + 1 }.jpg`
+    superPowerXP: () => Math.floor(Math.random() * 100) + 1,
+    profileImage: () => "https://randomuser.me/api/portraits/med/lego/" + (Math.floor(Math.random() * 10) + 1 ) + ".jpg"
 }
 
 //////////////////Step 3////////////////////
